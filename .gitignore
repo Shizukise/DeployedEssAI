@@ -1,0 +1,12 @@
+/myvenv
+/backend/core/config.py
+node_modules
+.env
+google-chrome-stable_current_amd64.deb
+/backend/api/diveScript/standaloneDiveDev.py
+**/__pycache__/
+/venv/Scripts
+standaloneDiveDev.py
+__pycache__
+/venv
+google-chrome-stable_124.0.6367.91-1_amd64.deb

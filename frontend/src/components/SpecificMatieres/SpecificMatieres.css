@@ -1,0 +1,216 @@
+/* Add this at the top of your CSS */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+  }
+
+/* Main Container */
+#main-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 85vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+    position: relative;
+}
+
+/* Left Sidebar */
+#left {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 85vh;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+}
+
+/* Actions inside Sidebar */
+#user-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#user-actions button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#user-actions button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+#user-actions button:disabled {
+    transform: scale(1.02);
+    cursor: not-allowed;
+    background-color: #6c757d;
+}
+
+/* Filters */
+#filters {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#filters select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* Right Content */
+#right {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 85vh;
+    overflow-y: auto;
+    right: 0;
+}
+
+/* Title Styles */
+.container-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Data Render Section */
+#data-render {
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Modified responsive rules */
+@media (max-width: 992px) {
+    #main-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 15px;
+      overflow-x: hidden; /* Prevents horizontal scroll on container */
+    }
+  
+    #left, #right {
+      position: static;
+      width: 100% !important; /* Forces full width */
+      min-width: unset; /* Removes any minimum width constraints */
+      height: auto;
+      box-shadow: none;
+      padding: 15px; /* Reduced padding for mobile */
+    }
+  
+    #left {
+      order: -1;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #main-container {
+      padding: 10px;
+    }
+  
+    /* Fix for tables/wide content */
+    .articles-table-container {
+      overflow-x: auto;
+      width: 100%;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  
+    .articles-table {
+      min-width: 600px; /* Reduced from 1000px - adjust based on your content */
+    }
+  
+    /* Ensure buttons/text remain usable */
+    #user-actions button {
+      white-space: normal; /* Allow button text to wrap */
+    }
+  }
+
+  /* Articles Table Container */
+.articles-table-container {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    
+}
+
+/* Table Styles */
+.articles-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.articles-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.articles-table th,
+.articles-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.articles-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links inside Table */
+.articles-table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.articles-table a:hover {
+    text-decoration: underline;
+}
+
+/* Loading Message */
+.loading-message {
+    font-size: 16px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .articles-table th,
+    .articles-table td {
+        padding: 8px;
+    }
+}
+

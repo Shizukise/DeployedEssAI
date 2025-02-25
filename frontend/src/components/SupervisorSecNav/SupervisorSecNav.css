@@ -1,0 +1,17 @@
+
+
+.SupervisorSecNav {
+    height: 2rem;
+    background-color: blue;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.ToolboxLink {
+    position: absolute;
+    right: 2rem;
+    line-height: 2rem;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}

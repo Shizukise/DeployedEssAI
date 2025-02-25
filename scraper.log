@@ -1,0 +1,127 @@
+2025-02-24 19:20:57,437 - INFO - Detected Chrome version: 133.0.6943
+2025-02-24 19:20:57,437 - INFO - ====== WebDriver manager ======
+2025-02-24 19:20:57,531 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:20:57,532 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:20:57,652 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:23:31,293 - INFO - Detected Chrome version: 133.0.6943
+2025-02-24 19:23:31,293 - INFO - ====== WebDriver manager ======
+2025-02-24 19:23:31,456 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:23:31,457 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:23:31,586 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:25:57,751 - ERROR - Error initializing Chrome driver: name 'chrome_version' is not defined
+2025-02-24 19:26:47,634 - INFO - ====== WebDriver manager ======
+2025-02-24 19:26:47,833 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:26:48,300 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:26:48,471 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:26:48,741 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:26:48,852 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:32:06,743 - INFO - ====== WebDriver manager ======
+2025-02-24 19:32:06,845 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:32:07,301 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:32:07,465 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:32:07,739 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:32:07,850 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+<<<<<<< HEAD
+=======
+2025-02-24 19:39:41,058 - INFO - ====== WebDriver manager ======
+2025-02-24 19:39:41,150 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:39:41,612 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:39:41,769 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:39:42,105 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:39:42,223 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:43:49,355 - INFO - ====== WebDriver manager ======
+2025-02-24 19:43:50,060 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:43:50,485 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:43:50,573 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:43:50,839 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:43:50,948 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:44:44,721 - INFO - ====== WebDriver manager ======
+2025-02-24 19:44:44,856 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:44:45,323 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:44:45,488 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:44:45,766 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:44:45,880 - ERROR - Error initializing Chrome driver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:58:14,736 - WARNING - 
+                    Version mismatch! Chrome 133.0.6943.126 vs ChromeDriver 114.0.5735.90
+                    Attempting fallback solutions...
+                    
+2025-02-24 19:58:14,738 - INFO - ====== WebDriver manager ======
+2025-02-24 19:58:14,912 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:58:15,344 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:58:15,511 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
+2025-02-24 19:58:15,781 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:58:15,896 - WARNING - Primary initialization failed: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_linux64.zip
+2025-02-24 19:58:15,897 - INFO - Attempting fallback to v114.0.5735.90
+2025-02-24 19:58:15,897 - INFO - ====== WebDriver manager ======
+2025-02-24 19:58:15,983 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:58:15,984 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+2025-02-24 19:58:16,559 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/114.0.5735]
+2025-02-24 19:58:17,962 - ERROR - Fallback 1 failed: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.126 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x5aaddfed64e3 <unknown>
+#1 0x5aaddfc05c76 <unknown>
+#2 0x5aaddfc3304a <unknown>
+#3 0x5aaddfc2e4a1 <unknown>
+#4 0x5aaddfc2b029 <unknown>
+#5 0x5aaddfc69ccc <unknown>
+#6 0x5aaddfc6947f <unknown>
+#7 0x5aaddfc60de3 <unknown>
+#8 0x5aaddfc362dd <unknown>
+#9 0x5aaddfc3734e <unknown>
+#10 0x5aaddfe963e4 <unknown>
+#11 0x5aaddfe9a3d7 <unknown>
+#12 0x5aaddfea4b20 <unknown>
+#13 0x5aaddfe9b023 <unknown>
+#14 0x5aaddfe691aa <unknown>
+#15 0x5aaddfebf6b8 <unknown>
+#16 0x5aaddfebf847 <unknown>
+#17 0x5aaddfecf243 <unknown>
+#18 0x70e7b1aa1e2e <unknown>
+#19 0x70e7b1b33a4c <unknown>
+
+2025-02-24 19:58:18,201 - INFO - ====== WebDriver manager ======
+2025-02-24 19:58:18,317 - INFO - There is no [linux64] chromedriver for browser 133.0.6943 in cache
+2025-02-24 19:58:18,317 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133/chromedriver_linux64.zip
+2025-02-24 19:58:18,440 - CRITICAL - All fallbacks failed: There is no such driver by url https://chromedriver.storage.googleapis.com/133/chromedriver_linux64.zip
+2025-02-24 20:02:56,551 - CRITICAL - Chromium installation failed: Command '['apt-get', 'install', '-y', 'chromium-browser=124.0.6367.91-0ubuntu0.22.04.1']' returned non-zero exit status 100.
+2025-02-24 20:08:14,053 - INFO - Search filters cleared successfully
+2025-02-24 20:12:56,853 - INFO - Search filters cleared successfully
+2025-02-24 20:17:01,378 - ERROR - Error extracting data for commande CO24110142: Message: 
+Stacktrace:
+#0 0x5785766b6a2a <unknown>
+#1 0x57857619b1a0 <unknown>
+#2 0x5785761eb58a <unknown>
+#3 0x5785761eb711 <unknown>
+#4 0x578576239ee4 <unknown>
+#5 0x57857621125d <unknown>
+#6 0x578576237256 <unknown>
+#7 0x578576211003 <unknown>
+#8 0x5785761dd47a <unknown>
+#9 0x5785761de5e1 <unknown>
+#10 0x578576681a2f <unknown>
+#11 0x578576685b4d <unknown>
+#12 0x57857666ed77 <unknown>
+#13 0x5785766862be <unknown>
+#14 0x57857665527e <unknown>
+#15 0x5785766a5408 <unknown>
+#16 0x5785766a5613 <unknown>
+#17 0x5785766b569c <unknown>
+#18 0x721ccba94ac3 <unknown>
+
+2025-02-24 20:21:54,114 - INFO - Search filters cleared successfully
+2025-02-24 20:24:08,390 - WARNING - Error extracting line for commande CO24110142: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-24 20:24:08,803 - WARNING - Error extracting line for commande CO24110142: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-24 20:24:09,109 - WARNING - Error extracting line for commande CO24110142: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-25 18:15:18,039 - INFO - Search filters cleared successfully
+2025-02-25 18:15:44,060 - WARNING - Error extracting line for commande CO24110462: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-25 18:15:44,326 - WARNING - Error extracting line for commande CO24110462: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-25 18:15:44,644 - WARNING - Error extracting line for commande CO24110462: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-25 18:15:45,136 - WARNING - Error extracting line for commande CO24110462: 'DiverScraper' object has no attribute 'specific_materials'
+2025-02-25 18:16:13,725 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /session/1fdfdda7794246a781809890216facb6/window/handles
+2025-02-25 18:16:13,741 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x788766029e20>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/1fdfdda7794246a781809890216facb6/window/handles
+2025-02-25 18:16:13,742 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x788766029d30>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/1fdfdda7794246a781809890216facb6/window/handles
+2025-02-25 18:16:13,758 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78876602a5a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/1fdfdda7794246a781809890216facb6
+2025-02-25 18:16:13,768 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78876602a750>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/1fdfdda7794246a781809890216facb6
+2025-02-25 18:16:13,778 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78876602a8d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/1fdfdda7794246a781809890216facb6
+>>>>>>> c8e83b81 (Save working changes before rebase)

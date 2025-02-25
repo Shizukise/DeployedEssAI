@@ -1,0 +1,33 @@
+/* Center the spinner on the screen */
+.spinner-border {
+    position: absolute; /* Make the spinner independent of other elements */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center correctly */
+    width: 4rem; /* Default size for medium screens */
+    height: 4rem; /* Match width */
+    border-width: 0.4rem; /* Adjust border thickness for a larger spinner */
+}
+
+/* Adjust spinner size for smaller screens */
+@media (max-width: 768px) {
+    .spinner-border {
+        width: 3rem; /* Slightly smaller for tablets and small devices */
+        height: 3rem;
+        border-width: 0.3rem;
+    }
+}
+
+/* Adjust spinner size for extra small screens */
+@media (max-width: 480px) {
+    .spinner-border {
+        width: 2.5rem; /* Smaller size for phones */
+        height: 2.5rem;
+        border-width: 0.25rem;
+    }
+}
+
+/* Optional: Add spacing for visual consistency */
+.m-5 {
+    margin: 2rem;
+}

@@ -1,0 +1,68 @@
+
+#TopNav {
+    height: 2.7rem;
+    background: linear-gradient(90deg, #E0F7FA, #0288D1);
+    position: relative;
+}
+
+#LogoutBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    padding: 0.2rem 0.5rem; /* Add padding for a clean button size */
+    background-color: #F5F5F5; /* Light gray for a subtle look */
+    color: #01579B; /* Dark blue for text to tie in with the navbar */
+    border: 1px solid #BDBDBD; /* Subtle border for definition */
+    border-radius: 0.2rem; /* Rounded corners for a modern touch */
+    font-size: 0.9rem; /* Adjust font size for readability */
+    font-weight: 500; /* Slightly bold for emphasis */
+    cursor: pointer; /* Indicate it's clickable */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#LogoutBtn:hover {
+    background-color: #E0E0E0; /* Slightly darker gray on hover */
+    color: #0288D1; /* Mid blue for hover text to make it pop */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#LogoutBtn:active {
+    background-color: #BDBDBD; /* Medium gray for active state */
+    color: #01579B; /* Dark blue remains for pressed state */
+    box-shadow: none; /* Remove shadow for a pressed look */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #LogoutBtn {
+        padding: 0.4rem 0.8rem; /* Reduce padding for smaller screens */
+        font-size: 0.8rem; /* Adjust font size to prevent text blurring */
+        right: 8px; /* Slightly reduce margin from the edge */
+    }
+}
+
+@media (max-width: 480px) {
+    #LogoutBtn {
+        padding: 0.3rem 0.7rem; /* Further reduce padding for very small screens */
+        font-size: 0.75rem; /* Slightly smaller font size for compactness */
+        right: 5px; /* Align closer to the edge on very small screens */
+    }
+}
+
+#HomeButton {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    font-size: 1.5rem; /* Adjust font size for readability */
+    font-weight: 500; /* Slightly bold for emphasis */
+    transform: translateY(-50%); /* Center vertically */
+    color: #01579B; /* Dark blue for text to tie in with the navbar */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#HomeButton:hover {
+    color: #0288D1; /* Mid blue for hover text to make it pop */
+}

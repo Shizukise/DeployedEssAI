@@ -1,0 +1,8 @@
+nohup: ignoring input
+[2025-02-23 19:20:00 +0000] [38238] [INFO] Starting gunicorn 23.0.0
+[2025-02-23 19:20:00 +0000] [38238] [INFO] Listening at: http://0.0.0.0:5000 (38238)
+[2025-02-23 19:20:00 +0000] [38238] [INFO] Using worker: sync
+[2025-02-23 19:20:00 +0000] [38239] [INFO] Booting worker with pid: 38239
+[2025-02-23 19:37:58 +0000] [38238] [INFO] Handling signal: term
+[2025-02-23 19:37:58 +0000] [38239] [INFO] Worker exiting (pid: 38239)
+[2025-02-23 19:37:59 +0000] [38238] [INFO] Shutting down: Master
