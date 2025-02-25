@@ -58,6 +58,8 @@ class DiverScraper:
         # Initialize driver
         self.driver = self._get_chromium_driver()
 
+        self.specific_materials = self.specific_materials = set(["Dibond", "Plexi", "PVC3MM", "entretoises"])
+
     def _configure_options(self):
         """Configure Chromium options"""
         self.options.add_argument("--headless=new")
