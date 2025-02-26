@@ -27,9 +27,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-chrome_path = subprocess.getoutput("which google-chrome")
-print(f"Chrome binary path: {chrome_path}")  # Should show /usr/bin/google-chrome
-
 class DiverScraper:
     """
     Attributes:
@@ -50,7 +47,7 @@ class DiverScraper:
 
         
         self._initialize_memory()
-
+        
          # Configure options
         self.options = webdriver.ChromeOptions()
         self._configure_options()
@@ -58,7 +55,7 @@ class DiverScraper:
         # Initialize driver
         self.driver = self._get_chromium_driver()
 
-        self.specific_materials = self.specific_materials = set(["Dibond", "Plexi", "PVC3MM", "entretoises"])
+        self.specific_materials = set(["Dibond", "Plexi", "PVC3MM", "entretoises"])
 
     def _configure_options(self):
         """Configure Chromium options"""
@@ -315,7 +312,9 @@ class DiverScraper:
             list[dict]: A list of orders with their associated articles.
         """
         try:
+            logger.info("Trying to access webapp")
             self.driver.get("https://plans.desautel-sai.fr/plans/commande/list")
+            logger.info("Webapp accessed!")
             time.sleep(2)
 
             # Login steps

@@ -30,6 +30,7 @@ async def diveIn(current_user: str = Depends(get_current_user), api_key : str = 
     try:
         credentials_exception = HTTPException(status_code=401, detail="Could not validate credentials")
         diver = DiverScraper(username="Atelier",password=password)
+        print("Scraper will run!")
         data = diver.run_script()
         print(data)
         with app.app_context():
