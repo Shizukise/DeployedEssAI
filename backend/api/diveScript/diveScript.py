@@ -5,9 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from webdriver_manager.core.utils import ChromeType
 import time
 import logging
 from backend.app import app, db
@@ -37,53 +35,56 @@ class DiverScraper:
         specific_materials (set): A set of material names to identify relevant articles during scraping.
     """
 
-    
-
     def __init__(self, password, username="Atelier", team="Tous"):
         """Initialize DiverScraper with compatibility checks and fallbacks."""
         self.username = username
         self.password = password
         self.team = team
 
-        
         self._initialize_memory()
-        
-         # Configure options
-        self.options = webdriver.ChromeOptions()
+
+        # Configure options
         self._configure_options()
-        
+
         # Initialize driver
         self.driver = self._get_chromium_driver()
 
         self.specific_materials = set(["Dibond", "Plexi", "PVC3MM", "entretoises"])
 
     def _configure_options(self):
-        """Configure Chromium options"""
+        """Configure Chrome options for headless mode and low resource usage."""
+        self.options = Options()
         self.options.add_argument("--headless=new")
         self.options.add_argument("--no-sandbox")
         self.options.add_argument("--disable-dev-shm-usage")
-        self.options.add_argument("--window-size=1920,1080")
-        self.options.binary_location = "/usr/bin/chromium-browser"
+        self.options.add_argument("--window-size=800,600")
+        self.options.add_argument("--disable-extensions")
+        self.options.add_argument("--disable-gpu")
+        self.options.add_argument("--single-process")
+        self.options.add_argument("--no-zygote")
+        self.options.add_argument("--renderer-process-limit=1")
+        self.options.add_argument("--max-old-space-size=256")
+        self.options.add_experimental_option("prefs", {
+            "profile.default_content_setting_values.geolocation": 2,
+            "profile.managed_default_content_settings.images": 2,
+        })
+        self.options.binary_location = "/usr/bin/google-chrome"
 
     def _get_chromium_driver(self):
-        """Get ChromeDriver with system binaries"""
+        """Initialize the ChromeDriver using the system-installed binary."""
         try:
-            # Use system-installed ChromeDriver
+            # Use the system-installed ChromeDriver
             driver_path = "/usr/bin/chromedriver"
             service = Service(executable_path=driver_path)
             return webdriver.Chrome(service=service, options=self.options)
-            
         except Exception as e:
-            logging.error(f"Driver initialization failed: {str(e)}")
-            # Fallback to WebDriverManager
-            from webdriver_manager.chrome import ChromeDriverManager
-            service = Service(ChromeDriverManager().install())
-            return webdriver.Chrome(service=service, options=self.options)
+            logger.error(f"Error initializing ChromeDriver: {e}")
+            raise
 
     def _initialize_memory(self):
-            """Initialize the memory context."""
-            with app.app_context():
-                self.memory = {item.order_CO for item in SpecificArticle.query.all()}
+        """Initialize the memory context by fetching stored order IDs from the database."""
+        with app.app_context():
+            self.memory = {item.order_CO for item in SpecificArticle.query.all()}
 
     def clean_search_filters(self):
         """
@@ -161,6 +162,9 @@ class DiverScraper:
             logger.warning(f"Error closing popup: {e}")
 
     def scrape_data_from_order_page(self, commande_id):
+        """
+        Scrapes data (articles and department) from a specific order page.
+        """
         articles = []
         cdepartment = None
         try:
