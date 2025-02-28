@@ -6,8 +6,11 @@ google-chrome-stable_current_amd64.deb
 /backend/api/diveScript/standaloneDiveDev.py
 **/__pycache__/
 /venv/Scripts
-standaloneDiveDev.py
+diveStandalone.py
 __pycache__
-/venv
+/ubuntuVenv
 google-chrome-stable_124.0.6367.91-1_amd64.deb
 standaloneDivescript.py
+google-chrome-stable_133.0.6943.141-1_amd64.deb.1
+chromedriver-linux64.zip
+chromedriver-linux64

@@ -10,7 +10,7 @@ import time
 import logging
 from backend.app import app, db
 from backend.api.diveScript.models import SpecificArticle
-from .utils import departments
+from backend.api.diveScript.utils import departments
 import subprocess
 import requests
 
@@ -48,6 +48,7 @@ class DiverScraper:
 
         # Initialize driver
         self.driver = self._get_chromium_driver()
+        
 
         self.specific_materials = set(["Dibond", "Plexi", "PVC3MM", "entretoises"])
 
@@ -57,24 +58,21 @@ class DiverScraper:
         self.options.add_argument("--headless=new")
         self.options.add_argument("--no-sandbox")
         self.options.add_argument("--disable-dev-shm-usage")
-        self.options.add_argument("--window-size=800,600")
+        self.options.add_argument("--start-maximized")
         self.options.add_argument("--disable-extensions")
         self.options.add_argument("--disable-gpu")
-        self.options.add_argument("--single-process")
-        self.options.add_argument("--no-zygote")
-        self.options.add_argument("--renderer-process-limit=1")
-        self.options.add_argument("--max-old-space-size=256")
         self.options.add_experimental_option("prefs", {
             "profile.default_content_setting_values.geolocation": 2,
             "profile.managed_default_content_settings.images": 2,
         })
-        self.options.binary_location = "/usr/bin/google-chrome"
+        self.options.binary_location = r"/opt/google/chrome/chrome"
+        
 
     def _get_chromium_driver(self):
         """Initialize the ChromeDriver using the system-installed binary."""
         try:
             # Use the system-installed ChromeDriver
-            driver_path = "/usr/bin/chromedriver"
+            driver_path = r"/usr/local/bin/chromedriver"
             service = Service(executable_path=driver_path)
             return webdriver.Chrome(service=service, options=self.options)
         except Exception as e:
@@ -140,6 +138,7 @@ class DiverScraper:
                     EC.element_to_be_clickable((By.XPATH, f"//span[text()='{self.team}']")))
                 team_select.click()
                 logger.debug(f"Applied team filter: {self.team}")
+            logger.debug('Filters applied!')
 
         except Exception as e:
             logger.error(f"Error applying filters: {e}")
@@ -167,6 +166,7 @@ class DiverScraper:
         """
         articles = []
         cdepartment = None
+        logger.debug('Script entered and order link and will try to scrape relevant data')
         try:
             # Execute JavaScript to reveal hidden columns
             self.driver.execute_script("""
@@ -255,12 +255,14 @@ class DiverScraper:
         commandes = []
         current_page = 1
         seen_CO = []
+        logger.debug('main script will run, trying to get all order links')
         try:
             # Navigate through pages
             while True:
                 WebDriverWait(self.driver, 10).until(
                     EC.presence_of_all_elements_located((By.XPATH, "//a[contains(@href, '/commande/view/')]")))
                 commande_elements = self.driver.find_elements(By.XPATH, "//a[contains(@href, '/commande/view/')]")
+                logger.debug('Order links found')
                 for idx, element in enumerate(commande_elements):
 
                     commande_url = element.get_attribute("href")
@@ -275,6 +277,7 @@ class DiverScraper:
 
                     self.close_popups()
                     self.driver.execute_script("document.charset = 'UTF-8';")
+                    logger.debug(f'script will try and scrape data from order {commande_id}')
                     articles, department = self.scrape_data_from_order_page(commande_id)
                     if len(articles) > 0:
                         commandes.append(
@@ -318,6 +321,7 @@ class DiverScraper:
         try:
             logger.info("Trying to access webapp")
             self.driver.get("https://plans.desautel-sai.fr/plans/commande/list")
+            self.driver.implicitly_wait(20)
             logger.info("Webapp accessed!")
             time.sleep(2)
 

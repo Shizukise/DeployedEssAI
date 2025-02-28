@@ -137,3 +137,174 @@ Stacktrace:
 2025-02-26 05:23:56,431 - INFO - Get LATEST chromedriver version for google-chrome 133.0.6943
 2025-02-26 05:23:56,998 - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_win32.zip
 2025-02-26 05:23:57,151 - ERROR - Error initializing ChromeDriver: There is no such driver by url https://chromedriver.storage.googleapis.com/133.0.6943/chromedriver_win32.zip
+2025-02-27 19:21:46,789 - ERROR - Error initializing ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-02-27 19:29:08,213 - ERROR - Error initializing ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-02-27 19:35:27,573 - ERROR - Error initializing ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-02-27 19:36:54,884 - ERROR - Error initializing ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-02-27 19:36:56,813 - ERROR - Error initializing ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-02-27 19:38:15,988 - INFO - Trying to access webapp
+2025-02-27 19:43:05,742 - INFO - Trying to access webapp
+2025-02-27 19:57:44,007 - INFO - Trying to access webapp
+2025-02-27 19:58:05,053 - ERROR - Error initializing ChromeDriver: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=133.0.6943.141)
+Stacktrace:
+#0 0x641cd8d0014a <unknown>
+#1 0x641cd879db80 <unknown>
+#2 0x641cd8784d3d <unknown>
+#3 0x641cd8782762 <unknown>
+#4 0x641cd878319f <unknown>
+#5 0x641cd879eaf4 <unknown>
+#6 0x641cd8771201 <unknown>
+#7 0x641cd8770bf6 <unknown>
+#8 0x641cd8823a87 <unknown>
+#9 0x641cd8822d46 <unknown>
+#10 0x641cd8814ca3 <unknown>
+#11 0x641cd87e0f08 <unknown>
+#12 0x641cd87e2071 <unknown>
+#13 0x641cd8cc9b5b <unknown>
+#14 0x641cd8ccdae2 <unknown>
+#15 0x641cd8cb5967 <unknown>
+#16 0x641cd8cce6d4 <unknown>
+#17 0x641cd8c99c7f <unknown>
+#18 0x641cd8ceecd8 <unknown>
+#19 0x641cd8ceeea9 <unknown>
+#20 0x641cd8cfefc6 <unknown>
+#21 0x72bdf04e3aa4 <unknown>
+#22 0x72bdf0570c3c <unknown>
+
+2025-02-27 20:03:37,219 - INFO - Trying to access webapp
+2025-02-27 20:03:51,682 - INFO - Trying to access webapp
+2025-02-27 20:05:14,480 - INFO - Trying to access webapp
+2025-02-27 20:07:39,770 - INFO - Trying to access webapp
+2025-02-27 20:07:41,747 - INFO - Webapp accessed!
+2025-02-27 20:07:56,353 - INFO - Search filters cleared successfully
+2025-02-27 20:14:41,872 - ERROR - Error extracting data for commande CO25010082: Message: 
+Stacktrace:
+#0 0x5db378d8614a <unknown>
+#1 0x5db378823b80 <unknown>
+#2 0x5db3788750e9 <unknown>
+#3 0x5db378875271 <unknown>
+#4 0x5db3788c3de4 <unknown>
+#5 0x5db37889aefd <unknown>
+#6 0x5db3788c114a <unknown>
+#7 0x5db37889aca3 <unknown>
+#8 0x5db378866f08 <unknown>
+#9 0x5db378868071 <unknown>
+#10 0x5db378d4fb5b <unknown>
+#11 0x5db378d53ae2 <unknown>
+#12 0x5db378d3b967 <unknown>
+#13 0x5db378d546d4 <unknown>
+#14 0x5db378d1fc7f <unknown>
+#15 0x5db378d74cd8 <unknown>
+#16 0x5db378d74ea9 <unknown>
+#17 0x5db378d84fc6 <unknown>
+#18 0x73be83654aa4 <unknown>
+#19 0x73be836e1c3c <unknown>
+
+2025-02-27 20:21:30,690 - INFO - Trying to access webapp
+2025-02-27 20:21:33,291 - INFO - Webapp accessed!
+2025-02-27 20:21:39,127 - INFO - Search filters cleared successfully
+2025-02-27 20:22:30,044 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/b242fb7ad9c8aa44a59e753161ad3749
+2025-02-27 20:22:30,219 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7089cd1155e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/b242fb7ad9c8aa44a59e753161ad3749
+2025-02-27 20:22:30,221 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7089cd115c70>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/b242fb7ad9c8aa44a59e753161ad3749
+2025-02-27 20:23:07,090 - INFO - Trying to access webapp
+2025-02-27 20:23:09,379 - INFO - Webapp accessed!
+2025-02-27 20:23:15,689 - INFO - Search filters cleared successfully
+2025-02-27 20:23:53,508 - WARNING - Error extracting line for commande CO24120297: Message: 
+
+2025-02-27 20:24:03,681 - WARNING - Error extracting line for commande CO24120297: Message: 
+
+2025-02-27 20:24:14,231 - WARNING - Error extracting line for commande CO24120297: Message: 
+
+2025-02-27 20:24:20,144 - WARNING - Error extracting line for commande CO24120297: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.141)
+Stacktrace:
+#0 0x5e8234b2814a <unknown>
+#1 0x5e82345c5b80 <unknown>
+#2 0x5e82345ab72e <unknown>
+#3 0x5e82345d4189 <unknown>
+#4 0x5e8234645839 <unknown>
+#5 0x5e8234662ad9 <unknown>
+#6 0x5e823463cca3 <unknown>
+#7 0x5e8234608f08 <unknown>
+#8 0x5e823460a071 <unknown>
+#9 0x5e8234af1b5b <unknown>
+#10 0x5e8234af5ae2 <unknown>
+#11 0x5e8234add967 <unknown>
+#12 0x5e8234af66d4 <unknown>
+#13 0x5e8234ac1c7f <unknown>
+#14 0x5e8234b16cd8 <unknown>
+#15 0x5e8234b16ea9 <unknown>
+#16 0x5e8234b26fc6 <unknown>
+#17 0x74f2201cbaa4 <unknown>
+#18 0x74f220258c3c <unknown>
+
+2025-02-27 20:25:06,863 - INFO - Trying to access webapp
+2025-02-27 20:25:07,169 - INFO - Webapp accessed!
+2025-02-27 20:25:15,460 - INFO - Search filters cleared successfully
+2025-02-27 20:25:57,709 - WARNING - Error extracting line for commande CO24120297: Message: 
+
+2025-02-27 20:26:17,537 - WARNING - Error extracting line for commande CO24120297: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-27 20:26:17,553 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d5795b0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.78/element
+2025-02-27 20:26:17,554 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d579880>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.78/element
+2025-02-27 20:26:17,554 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d579a60>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.78/element
+2025-02-27 20:26:17,555 - WARNING - Error extracting line for commande CO24120297: HTTPConnectionPool(host='localhost', port=51459): Max retries exceeded with url: /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.78/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d579c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-02-27 20:26:17,556 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d578d40>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.79/element
+2025-02-27 20:26:17,556 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d579ee0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.79/element
+2025-02-27 20:26:17,557 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57a120>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.79/element
+2025-02-27 20:26:17,558 - WARNING - Error extracting line for commande CO24120297: HTTPConnectionPool(host='localhost', port=51459): Max retries exceeded with url: /session/df9a0e639d2bc6b571e4e4573f7f90bf/element/f.D8AE9AF597B5B681EC2DEEDBF5CF41D1.d.77B26C472EFEF91C7766EF08987311EB.e.79/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57a360>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-02-27 20:26:17,558 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57a570>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/window
+2025-02-27 20:26:17,559 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57a750>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/window
+2025-02-27 20:26:17,559 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57a900>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf/window
+2025-02-27 20:26:17,560 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57ac90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf
+2025-02-27 20:26:17,560 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57ae70>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf
+2025-02-27 20:26:17,561 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70181d57b020>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/df9a0e639d2bc6b571e4e4573f7f90bf
+2025-02-27 20:27:49,626 - INFO - Trying to access webapp
+2025-02-27 20:28:10,919 - INFO - Webapp accessed!
+2025-02-27 20:28:18,649 - INFO - Search filters cleared successfully
+2025-02-27 20:30:04,476 - ERROR - Error extracting data for commande CO25010430: Message: 
+Stacktrace:
+#0 0x561c02b7314a <unknown>
+#1 0x561c02610b80 <unknown>
+#2 0x561c026620e9 <unknown>
+#3 0x561c02662271 <unknown>
+#4 0x561c026b0de4 <unknown>
+#5 0x561c02687efd <unknown>
+#6 0x561c026ae14a <unknown>
+#7 0x561c02687ca3 <unknown>
+#8 0x561c02653f08 <unknown>
+#9 0x561c02655071 <unknown>
+#10 0x561c02b3cb5b <unknown>
+#11 0x561c02b40ae2 <unknown>
+#12 0x561c02b28967 <unknown>
+#13 0x561c02b416d4 <unknown>
+#14 0x561c02b0cc7f <unknown>
+#15 0x561c02b61cd8 <unknown>
+#16 0x561c02b61ea9 <unknown>
+#17 0x561c02b71fc6 <unknown>
+#18 0x787a42a83aa4 <unknown>
+#19 0x787a42b10c3c <unknown>
+
+2025-02-27 20:30:43,568 - INFO - Trying to access webapp
+2025-02-27 20:30:44,724 - INFO - Webapp accessed!
+2025-02-27 20:30:50,848 - INFO - Search filters cleared successfully
+2025-02-27 21:00:31,219 - WARNING - Error closing popup: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-27 21:00:31,220 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f2810>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0/execute/sync
+2025-02-27 21:00:31,220 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f2570>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0/execute/sync
+2025-02-27 21:00:31,221 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f1370>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0/execute/sync
+2025-02-27 21:00:31,222 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f2330>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0
+2025-02-27 21:00:31,222 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f2e40>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0
+2025-02-27 21:00:31,223 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x764a1a5f2fc0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/204167b44acf235ea66e331f67480ec0
+2025-02-27 21:01:06,534 - INFO - Trying to access webapp
+2025-02-27 21:01:06,877 - INFO - Webapp accessed!
+2025-02-27 21:01:21,035 - INFO - Search filters cleared successfully
+2025-02-27 21:45:13,205 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x742ec214d160>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/b308fdc1a2d8af5ea6ec7f62919852cf
+2025-02-27 21:45:13,206 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x742ec214e510>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/b308fdc1a2d8af5ea6ec7f62919852cf
+2025-02-27 21:45:13,206 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x742ec214d2b0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/b308fdc1a2d8af5ea6ec7f62919852cf
