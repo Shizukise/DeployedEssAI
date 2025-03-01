@@ -2,12 +2,13 @@ import { useAuth } from "../../context/authContext";
 
 const useValidateSession = () => {
     const { user, logout, refreshToken } = useAuth();
+    const API_URL = process.env.REACT_APP_API_URL;
 
     const validateSession = async () => {
         try {
             const formData = new FormData()
             formData.append('username',user)
-            const response = await fetch(`http://134.122.108.55:8000/api/auth/validateSession`, {
+            const response = await fetch(`${API_URL}/auth/validateSession`, {
                 method: "POST",
                 body: formData,
                 headers: {

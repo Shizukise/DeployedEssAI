@@ -4,14 +4,14 @@ import { useAuth } from "../context/authContext"
 const useGetCredentials = () => {
 
     const { jwtoken,user } = useAuth()
-    
+    const API_URL = process.env.REACT_APP_API_URL;
 
     const fetchCredentials = async () => {
 
         let creds = {}
         
         try {
-            const response = await fetch(`http://134.122.108.55:8000/api/auth/getusercreds?username=${user}`, {
+            const response = await fetch(`${API_URL}/auth/getusercreds?username=${user}`, {
               method: "GET",
               headers: {
                 Authorization: `Bearer ${localStorage.getItem('jwtoken')}`,

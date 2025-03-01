@@ -3,6 +3,9 @@ import { useAuth } from "../../../context/authContext";
 import useRefreshJWToken from "../../../hooks/sessionHooks/refreshJWToken";
 
 const useDiveIn = () => {
+
+    const API_URL = process.env.REACT_APP_API_URL;
+
     const { logout, user } = useAuth();
     const refreshJWToken = useRefreshJWToken(); 
     const nav = useNavigate();
@@ -13,7 +16,7 @@ const useDiveIn = () => {
             formData.append("api_key",api_key)
             formData.append('username',username)
             formData.append('password',password)
-            const response = await fetch(`http://134.122.108.55:8000/api/dive/divein`, {
+            const response = await fetch(`${API_URL}/dive/divein`, {
                 method: "POST",
                 body : formData,
                 headers: {

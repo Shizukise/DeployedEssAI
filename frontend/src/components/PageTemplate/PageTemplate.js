@@ -25,7 +25,7 @@ const PageTemplate = ({ children }) => {
         <>
             <div id="TopNav">
                 <button id="LogoutBtn" onClick={logout}>Déconnexion</button>
-                <Link to="/dashboard"><i className="bi bi-house" id="HomeButton"></i></Link>
+                <Link to="/dashboard"><i className="bi bi-house" id="HomeButton"> My Station</i></Link>
             </div>
             <div id="Children">
                 {children}

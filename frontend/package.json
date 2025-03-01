@@ -7,10 +7,10 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-  "build": "react-scripts build",
-  "start": "react-scripts start",
-  "dev": "set FLASK_APP=..\\my_flask\\app.py && set PYTHONPATH=%cd%\\..;%cd% && concurrently \"npm start\" \"flask run --host=0.0.0.0 --port 5000\" \"uvicorn execute.run:api --host 0.0.0.0 --port 8000\""
-},
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "dev": "set FLASK_APP=..\\my_flask\\app.py && set PYTHONPATH=%cd%\\..;%cd% && concurrently \"npm start\" \"flask run --host=0.0.0.0 --port 5000\" \"uvicorn execute.run:api --host 0.0.0.0 --port 8000\""
+  },
   "proxy": "http://localhost:8000",
   "browserslist": {
     "production": [

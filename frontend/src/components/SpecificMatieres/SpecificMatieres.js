@@ -18,6 +18,9 @@ import PageSpinner from '../PageSpinner/PageSpinner';
 
 
 const MatieresSpecifiquesPage = () => {
+
+    const API_URL = process.env.REACT_APP_API_URL;
+
     const [data, setData] = useState([]); // Each tuple has a material type or item and a quantity ex: "(article,24)"
     const diveIn = useDiveIn();
     const diveOut = useDiveOut();
@@ -72,7 +75,7 @@ const MatieresSpecifiquesPage = () => {
 
             const fetchData = async (token) => {
                 try {
-                    const response = await fetch(`http://134.122.108.55:8000/api/dive/fetchall?team=${filters['Team']}&agence=${filters['Agence']}`, {
+                    const response = await fetch(`${API_URL}/dive/fetchall?team=${filters['Team']}&agence=${filters['Agence']}`, {
                         method: "GET",
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -141,29 +144,6 @@ const MatieresSpecifiquesPage = () => {
         );
     };
 
-
-    const updateDataTuples = async () => {
-        if (!credentials.username || !credentials.api_key) {
-            console.error("Credentials not loaded yet.");
-            return;
-        }
-        try {
-            let userInput = prompt("Enter password:");
-            const result = await diveIn(localStorage.getItem('jwtoken'), credentials.api_key, credentials.username,userInput); // Call the backend
-            if (result && result.message) {
-                console.log(result.message);
-                setData(result.message);
-                return;
-            } else {
-                console.error('Unexpected response structure:', result);
-                return;
-            }
-        } catch (error) {
-            console.error('Error while fetching data:', error); // Handle errors
-            return;
-        }
-    };
-
     const generateFile = async () => {
         try {
             const result = await diveOut(localStorage.getItem('jwtoken'));
@@ -202,9 +182,7 @@ const MatieresSpecifiquesPage = () => {
                             Actions
                         </h1>
                         <div id="user-actions">
-                            <button onClick={() => generateFile()}>Télécharger les informations</button>
-                            <button onClick={() => updateDataTuples()} disabled={permited}>Mettre à jour</button>
-                            <button onClick={() => console.log(filters)}>Notifier l'atelier</button>
+                            <button onClick={() => generateFile()}>Télécharger Extract</button>
                             <div id="filters">
                                 <p>Filter content</p>
                                 <select onChange={handleAgenceSelect} ref={agenceSelectRef}>

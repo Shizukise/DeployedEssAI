@@ -2,13 +2,14 @@ import { useAuth } from "../../context/authContext";
 
 const useRefreshJWToken = () => {
     const { user, refreshToken, refreshJWToken } = useAuth();
+    const API_URL = process.env.REACT_APP_API_URL;
 
     const refreshTokenHandler = async () => {
         const formData = new FormData();
         formData.append('username', user);
         
         try {
-            const request = await fetch('http://134.122.108.55:8000/api/auth/refreshjwtoken', {
+            const request = await fetch(`${API_URL}/auth/refreshjwtoken`, {
                 method: 'POST',
                 body: formData,
                 headers: {

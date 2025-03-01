@@ -97,14 +97,7 @@ function Development() {
   return !loading ? (
     <>
       <SupervisorSecNav/>
-      <div className="App">
-        <div className="validation api development links">
-          <input type="file" multiple onChange={handleFileSelect} />
-          <button onClick={uploadFiles}>Upload</button>
-          <button onClick={validate}>validate</button>
-        </div>
-          <button onClick={() => console.log(user, jwtoken, refreshToken,credentials)}>Print logged user</button>
-      </div>
+      HOMEPAGE
     </>
   ) : 
       <PageSpinner/>;

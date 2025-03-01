@@ -11,6 +11,7 @@ function Login() {
     const password = useRef();
     const nav = useNavigate()
     const { login, logout, user, jwtoken, refreshToken } = useAuth();
+    const API_URL = process.env.REACT_APP_API_URL;
 
     if (localStorage.getItem("user") && localStorage.getItem("jwtoken")) { //So the user does not go to login page in case he is logged in
         nav("/dashboard")                                                 // this need validation from backend for the token 
@@ -41,7 +42,7 @@ function Login() {
             formData.append("username", usernameValue);
             formData.append("password", passwordValue);
 
-            const response = await fetch("http://134.122.108.55:8000/api/auth/login", {
+            const response = await fetch(`${API_URL}/auth/login`, {
                 method: "POST",
                 credentials: "include",
                 body: formData,
