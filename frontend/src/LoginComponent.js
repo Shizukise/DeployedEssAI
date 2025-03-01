@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./context/authContext";
 
@@ -13,9 +13,13 @@ function Login() {
     const { login, logout, user, jwtoken, refreshToken } = useAuth();
     const API_URL = process.env.REACT_APP_API_URL;
 
-    if (localStorage.getItem("user") && localStorage.getItem("jwtoken")) { //So the user does not go to login page in case he is logged in
-        nav("/dashboard")                                                 // this need validation from backend for the token 
-    }
+
+
+    useEffect(() => {
+        if (localStorage.getItem("user") && localStorage.getItem("jwtoken")) {
+            nav("/dashboard");
+        }
+    }, [nav]);
 
     const createUser = async () => {
         try {
@@ -42,7 +46,7 @@ function Login() {
             formData.append("username", usernameValue);
             formData.append("password", passwordValue);
 
-            const response = await fetch(`${API_URL}/auth/login`, {
+            const response = await fetch("${API_URL}/auth/login", {
                 method: "POST",
                 credentials: "include",
                 body: formData,
